@@ -76,23 +76,29 @@ classDiagram
       Transaction: +public getAccountNumber()
       Transaction: +getScreen()
       Transaction: +getBankDataBase()
+      Transaction: +execute()
       class Withdrawal{
           +private int amount
           +private Keypad keypad
           +private CashDispenser cashDispenser
-          +swim()
-          +quack()
+          +private double availableBalance
+          +execute()
       }
       class BalanceInquiry{
-          -int sizeInFeet
-          -canEat()
-      }
-      class Deposit{
-          +bool is_wild
-          +run()
+          +execute()
       }
       class ChangePIN{
-          +bool is_wild
-          +run()
+          +private Keypad keypad
+          +private int newPIN
+          +execute()
+          +promptForNewPIN()
+      }
+      class Deposit{
+          +private double amount
+          +private Keypad keypad
+          +private DepositSlot depositSlot
+          +private final static int CANCELLED = 0
+          +execute()
+          +promptForDepositAmount()
       }
 ```
