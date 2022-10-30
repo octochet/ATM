@@ -22,7 +22,6 @@ information.
 
 
 
-
 ## Features
 
 The ATM consists of the following features:
