@@ -164,14 +164,19 @@ classDiagram
       ATM *-- Screen
       ATM *-- DepositSlot
       ATM *-- CashDispenser
+      ATM o-- BankDatabase
+      Withdrawal o-- Keypad
       Withdrawal o-- CashDispenser
       Deposit o-- DepositSlot
+      Deposit o-- Keypad
+      ChangePIN o-- Keypad
       Account *-- BankDatabase
       BankDatabase *-- Transaction
       Transaction <|-- Withdrawal
       Transaction <|-- BalanceInquiry
       Transaction <|-- Deposit
       Transaction <|-- ChangePIN
+      Transaction o-- Screen
       Transaction : +private int accountNumber
       Transaction : +private Screen screen
       Transaction : +private BankDatabase bankDataBase
