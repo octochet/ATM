@@ -286,16 +286,16 @@ Transaction class.
 to all types of transactions.
 
 ### Polymorphism
-- Screen : displayMessage takes two types of inputs string an double.
-- execute method in differet classes.
+- Screen : displayMessage takes two types of inputs string and double.
+- execute method in different classes.
 
 
 ## Use of Access Specifiers
 
-- Private final Account Number : Since account number is never changed it is final
+- Private final Account Number : Since account number is never changed it is final.
 - Private class Account has Private fields for more privacy.
 - Account class has public getter setter.
-- Private static final ... :For option types in ATM and Deposit, As they will never change
+- Private static final ... :For option types in ATM and Deposit, as they will never change.
 
 ## Authors
 
