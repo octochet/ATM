@@ -187,7 +187,7 @@ Total balance:
 
 37650.0
 
-## I/O 4 : Deposit
+## I/O 5 : Deposit
 Main Menu
 
 1 - View Balance.
@@ -216,7 +216,7 @@ Main Menu
 
  Your envelope has been received. \nNOTE: Money will be deposited as soon as possible.First we will have to check the envelope.
  
- ## I/O 5 : Change PIN and re-login
+ ## I/O 6 : Change PIN and re-login
   
  --------Welcome to ATM!!!--------
  
@@ -299,7 +299,7 @@ Main Menu
 
  enter a choice
  
- ## I/O 5 : Logout
+ ## I/O 7 : Logout
  --------Welcome to ATM!!!--------
  
 Enter account number: 
