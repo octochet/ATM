@@ -66,13 +66,15 @@ MyATM.run();
 
 ```mermaid
 classDiagram
-      Animal <|-- Duck
-      Animal <|-- Fish
-      Animal <|-- Zebra
-      Animal : +int age
-      Animal : +String gender
-      Animal: +isMammal()
-      Animal: +mate()
+      Transaction <|-- Withdrawal
+      Transaction <|-- BalanceInquiry
+      Transaction <|-- Deposit
+      Transaction <|-- ChangePIN
+      Transaction : +int accountNumber
+      Transaction : +private Screen screen
+      Transaction : +BankDatabase bankDataBase
+      Transaction: +getAccountNumber()
+      Transaction: +mate()
       class Duck{
           +String beakColor
           +swim()
