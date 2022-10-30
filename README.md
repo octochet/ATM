@@ -39,7 +39,7 @@ A list is given below :
 
 | S.No. | Class |
 |:-----:|:-----------:|
-|     01|      [MAIN]([###main](https://github.com/octochet/ATM/blob/main/README.md#main))     |
+|     01|      [###main](https://github.com/octochet/ATM/blob/main/README.md#main)  |
 |     02|      ATM      |
 |     03|    ACCOUNT    |
 |     05| BANK DATABASE |
