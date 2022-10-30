@@ -70,21 +70,28 @@ classDiagram
       Transaction <|-- BalanceInquiry
       Transaction <|-- Deposit
       Transaction <|-- ChangePIN
-      Transaction : +int accountNumber
+      Transaction : +private int accountNumber
       Transaction : +private Screen screen
-      Transaction : +BankDatabase bankDataBase
-      Transaction: +getAccountNumber()
-      Transaction: +mate()
-      class Duck{
-          +String beakColor
+      Transaction : +private BankDatabase bankDataBase
+      Transaction: +public getAccountNumber()
+      Transaction: +getScreen()
+      Transaction: +getBankDataBase()
+      class Withdrawal{
+          +private int amount
+          +private Keypad keypad
+          +private CashDispenser cashDispenser
           +swim()
           +quack()
       }
-      class Fish{
+      class BalanceInquiry{
           -int sizeInFeet
           -canEat()
       }
-      class Zebra{
+      class Deposit{
+          +bool is_wild
+          +run()
+      }
+      class ChangePIN{
           +bool is_wild
           +run()
       }
