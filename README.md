@@ -40,7 +40,7 @@ A list is given below :
 | S.No. | Class |
 |:-----:|:-----------:|
 |     01|      [MAIN](#main)     |
-|     02|      [ATM](#ATM)      |
+|     02|      [ATM](#atm)      |
 |     03|    [ACCOUNT](#account)    |
 |     04| [BANK DATABASE](#bank-database) |
 |     05|  [TRANSACTION](#transaction)  |
@@ -180,6 +180,7 @@ classDiagram
       Transaction: +getBankDataBase()
       Transaction: +execute()
       Main: + ATM MyATM
+      Main: +main(String args[]) void
       class Withdrawal{
           +private int amount
           +private Keypad keypad
@@ -264,3 +265,31 @@ classDiagram
           +run() void          
       }
 ```
+
+# OOPs Concepts
+I have utilized all the OOPs concepts in this project.
+
+### Encapsulation 
+- Created classes for most things in an ATM and their respective methods.
+
+### Inheritance 
+- Classes such as Withdrawal, Deposit and changePIN inherit the 
+Transaction class.
+
+### Abstraction
+- Created an abstract class Transaction which contains field and methods common
+to all types of transactions.
+
+### Polymorphism
+- Screen : displayMessage takes two types of inputs string an double.
+- execute method in differet classes.
+
+
+## Use of Access Specifiers
+
+- Private final Account Number : Since account number is never changed it is final
+- Private class Account has Private fields for more privacy.
+- Account class has public getter setter.
+- Private static final ... :For option types in ATM and Deposit, As they will never change
+
+
