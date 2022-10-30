@@ -1,7 +1,7 @@
 
 # CASE STUDY 2 : ATM
 
-###### Made by : Chetan Moturi (CS21B017)
+
 
 This project is made entirely on java and utilizes the 
 various object oriented programming concepts we have learned 
@@ -64,6 +64,7 @@ MyATM.run();
 Contains authentication, main menu and perform transactions methods.
 All of this is utilized in the run method which will run the ATM. 
 
+It Authenticates the user credentials, displays the Main Menu, creates a transaction based on the user's choice, performs the transaction.
 The methods are listed below ,
 ```
 private void authenticateUser()
@@ -292,4 +293,7 @@ to all types of transactions.
 - Account class has public getter setter.
 - Private static final ... :For option types in ATM and Deposit, As they will never change
 
+## Authors
 
+- Chetan Moturi: [@octochet](https://www.github.com/octochet)
+- ###### Made by : Chetan Moturi (CS21B017)
