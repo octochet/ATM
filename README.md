@@ -64,8 +64,8 @@ MyATM.run();
 
 ## Class Diagram
 
-```
-journey mermaid
+``` mermaid
+journey 
 	title Me studying for exams
 	section Exam is announced
 		I start studying: 1: Me
