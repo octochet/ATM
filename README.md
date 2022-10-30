@@ -22,7 +22,7 @@ information.
 
 
 
-## Features
+## FEATURES
 
 The ATM consists of the following features:
 - Withdrawal
@@ -31,7 +31,7 @@ The ATM consists of the following features:
 - Change PIN
 
 
-## Code
+## CODE
 
 The code is split into various different classes. 
 A list is given below :
@@ -41,18 +41,18 @@ A list is given below :
 |     01|      [MAIN](#main)     |
 |     02|      [ATM](#atm)      |
 |     03|    [ACCOUNT](#account)    |
-|     04| [BANK DATABASE](#bank-database) |
+|     04| [BANK DATABASE](#bankdatabase) |
 |     05|  [TRANSACTION](#transaction)  |
 |     06|   [WITHDRAWAL](#withdrawal)  |
-|     07| [CASH DISPENSER](#cash-dispenser)|
+|     07| [CASH DISPENSER](#cashdispenser)|
 |     08|    [DEPOSIT](#deposit)    |
-|     09| [DEPOSIT SLOT](#deposit-slot)  |
-|     10|[BALANCE INQUIRY](#balance-inquiry)|
-|     11|   [CHANGE PIN](#change-pin)  |
+|     09| [DEPOSIT SLOT](#depositslot)  |
+|     10|[BALANCE INQUIRY](#balanceinquiry)|
+|     11|   [CHANGE PIN](#changepin)  |
 |     12|     [KEYPAD](#keypad)    |
 |     13|     [SCREEN](#screen)    |
 
-### MAIN
+### Main
 Contains the Main Driver code which will run the ATM. The 
 method used is,
 ```
@@ -72,7 +72,7 @@ private Transaction createTransaction(int MainMenuChoice)
 private void performTransactions()
 public void run()
 ```
-### ACCOUNT 
+### Account
 Contains basic account information such as, account number, pin, balance and 
 number of pin tries/fails.
 
@@ -85,7 +85,7 @@ public void credit(double amount)
 public void debit(double amount)
 public void changePIN(int newPIN)
 ```
-### BANK DATABASE
+### BankDatabase
 Contains information regarding accounts, gets account, authentication and etc.
 
 Methods are:
@@ -94,18 +94,18 @@ static Account getAccount(int accountNumber)
 public boolean authenticateUser(int userAccountNumber, int userPIN)
 ```
 
-### TRANSACTION
+### Transaction
 It is an Abstract class which is used for executing different types of transactions.
 
 It will be inherited to different types of transactions listed in main menu
 such as deposit and withdrawal.
 
-### WITHDRAWAL
+### Withdrawal
 It inherits transaction abstract class and is used for withdrawing money from the ATM.
 It has a limit on withdrawal amount and utilizes the cash dispenser to output the required number of denomination
 notes.
 
-### CASH DISPENSER
+### CashDispenser
 Contains fields for the amount of notes inside the ATM, Has the dispense cash method which
 will calculate what currency notes will be required for the withdrawal amount 
 and out the number of notes with respective denominations.
@@ -114,7 +114,7 @@ It also checks if it has sufficient cash to facilitate a withdrawal or not.
 public void dispenseCash(int amount)
 public boolean isSufficientCashAvailable( int amount)
 ```
-### DEPOSIT
+### Deposit
 It inherits transaction abstract class and is used for depositing envelopes in the ATM.
 It makes use of the deposit slot in the ATM to check if the envelope is recieved or not.
 
@@ -122,13 +122,13 @@ It has the following method to get deposit amount ,
 ```
 private double promptForDepositAmount()
 ```
-### DEPOSIT SLOT
+### DepositSlot
 Checks if envelope is recieved or not.
 
-### BALANCE INQUIRY
+### BalanceInquiry
 Prints the Account information and Balance available in the account. It also inherits the abstract class Transaction.
 
-### CHANGE PIN 
+### ChangePIN 
 It extends the abstract class transaction. It asks for a new PIN from the user 
 twice for cofirmation and updates it using the update pin method in account. It also has
 the cancel feature incase the user wants to not change the PIN.
@@ -139,14 +139,14 @@ private int promptForNewPIN()
 ```
 for getting the new PIN input from keypad.
 
-### KEYPAD 
+### Keypad 
 It is a utility class to imitate a real ATM's keypad. It takes input in the form of
 digits from the user.
 ```
 public int getInput()
 ```
 
-### SCREEN
+### Screen
 It is also a utility class to imitate a real ATM'S screen. It is used to display messages on the screen
 using the method,
 ```
