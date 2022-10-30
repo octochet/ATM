@@ -64,18 +64,26 @@ MyATM.run();
 
 ## Class Diagram
 
-``` mermaid
-journey 
-	title Me studying for exams
-	section Exam is announced
-		I start studying: 1: Me
-		Make notes: 2: Me
-		Ask friend for help: 3: Me, Friend
-		We study togther: 5: Me, Friend
-	section Exam Day
-		Syllabys is incomplete: 2: Me
-		Give exam: 1: Me, Friend
-	section Result Declared
-		I passed the exam with destinction!: 5: Me
-		Friend barely gets passing marks: 2: Friend
+```mermaid
+classDiagram
+      Animal <|-- Duck
+      Animal <|-- Fish
+      Animal <|-- Zebra
+      Animal : +int age
+      Animal : +String gender
+      Animal: +isMammal()
+      Animal: +mate()
+      class Duck{
+          +String beakColor
+          +swim()
+          +quack()
+      }
+      class Fish{
+          -int sizeInFeet
+          -canEat()
+      }
+      class Zebra{
+          +bool is_wild
+          +run()
+      }
 ```
