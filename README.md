@@ -39,19 +39,19 @@ A list is given below :
 
 | S.No. | Class |
 |:-----:|:-----------:|
-|     01|      [MAIN](https://github.com/octochet/ATM/blob/main/README.md#main)  |
-|     02|      ATM      |
-|     03|    ACCOUNT    |
-|     05| BANK DATABASE |
-|     12|  TRANSACTION  |
-|     13|   WITHDRAWAL  |
-|     06| CASH DISPENSER|
-|     08|    DEPOSIT    |
-|     09| DEPOSIT SLOT  |
-|     04|BALANCE INQUIRY|
-|     07|   CHANGE PIN  |
-|     10|     KEYPAD    |
-|     11|     SCREEN    |
+|     01|      [MAIN](#main)     |
+|     02|      [ATM](#ATM)      |
+|     03|    [ACCOUNT](#account)    |
+|     05| [BANK DATABASE](#bank-database) |
+|     12|  [TRANSACTION](#transaction)  |
+|     13|   [WITHDRAWAL](#withdrawal)  |
+|     06| [CASH DISPENSER](#cash-dispenser)|
+|     08|    [DEPOSIT](#deposit)    |
+|     09| [DEPOSIT SLOT](#deposit-slot)  |
+|     04|[BALANCE INQUIRY](#balance-inquiry)|
+|     07|   [CHANGE PIN](#change-pin)  |
+|     10|     [KEYPAD](#keypad)    |
+|     11|     [SCREEN](#screen)    |
 
 ### MAIN
 Contains the Main Driver code which will run the ATM. The 
